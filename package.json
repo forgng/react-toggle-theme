@@ -1,6 +1,6 @@
 {
   "name": "react-toggle-theme",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simple component to switch between dark and light themes",
   "author": "forgng",
   "license": "MIT",
