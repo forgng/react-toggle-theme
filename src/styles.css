@@ -1,8 +1,55 @@
-/* add css styles here (optional) */
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.toggleContainer {
+  cursor: pointer;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 100px;
+  align-items: center;
+  background-color: #80deea;
+  flex-direction: row;
+  transition: 0.3s;
+  width: 60px;
+}
+
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  transition: 0.3s;
+  border: 2px solid #f9a825;
+  background-color: #ffeb3b;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin: 3px;
+}
+
+.moon {
+  fill: #fff;
+  stroke: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+input:checked ~ label .toggleContainer {
+  background-color: #536dfe;
+}
+
+input:checked ~ label .circle {
+  background-color: #01579b;
+  transition: 0.3s ease-out;
+  border-color: #fafafa;
+  transform: translateX(calc(100% + 10px));
+}
+
+input:checked ~ label .moon {
+  opacity: 1;
+  transition: 0.3s;
 }

@@ -13,15 +13,13 @@ npm install --save react-toggle-theme
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
 
-import MyComponent from 'react-toggle-theme'
+import ToggleTheme from "react-toggle-theme";
 
 class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <ToggleTheme />;
   }
 }
 ```
