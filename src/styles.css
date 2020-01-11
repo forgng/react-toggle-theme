@@ -4,6 +4,12 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 .toggleContainer {
   cursor: pointer;
   display: inline-flex;
